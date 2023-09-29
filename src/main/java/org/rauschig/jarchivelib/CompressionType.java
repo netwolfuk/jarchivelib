@@ -37,7 +37,11 @@ public enum CompressionType {
     /**
      * Constant used to identify the PACK200 compression algorithm.
      */
-    PACK200(CompressorStreamFactory.PACK200, ".pack");
+    PACK200(CompressorStreamFactory.PACK200, ".pack"),
+	/**
+	 * Constant used to identify the ZSTANDARD compression algorithm.
+	 */
+	ZSTD(CompressorStreamFactory.ZSTANDARD, ".zs");
 
     /**
      * The name by which the compression algorithm is identified
